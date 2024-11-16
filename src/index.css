@@ -1,3 +1,4 @@
+/* General Body Styling */
 body {
   background-color: #f7f9fc; 
   margin: 0 auto;
@@ -5,6 +6,7 @@ body {
   padding-bottom: 80px;
 }
 
+/* Title Styling */
 .title {
   text-align: center;
   font-size: 2.5rem;
@@ -13,6 +15,7 @@ body {
   margin-bottom: 50px;
 }
 
+/* Task Manager Container */
 .taskManager {
   background-color: #fff;
   padding: 20px;
@@ -22,12 +25,14 @@ body {
   margin: 0 auto;
 }
 
+/* Headings */
 h2 {
   font-size: 1.8rem;
   color: #2c3e50;
   margin-bottom: 20px;
 }
 
+/* Task Input Section */
 .taskInput {
   display: flex;
   flex-direction: row;
@@ -55,6 +60,7 @@ h2 {
   outline: none;
 }
 
+/* Button Styling */
 button {
   font-size: 1.1rem;
   padding: 10px 20px;
@@ -63,13 +69,16 @@ button {
   background-color: #3498db;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
   background-color: #2980b9;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
+/* Task Bar Styling */
 .taskBar {
   display: flex;
   justify-content: space-around;
@@ -78,6 +87,7 @@ button:hover {
   margin-top: 30px;
 }
 
+/* Task Type Cards */
 .taskType {
   background-color: #e3f2fd;
   border-radius: 8px;
@@ -90,8 +100,16 @@ button:hover {
 .taskType:nth-child(2) {
   background-color: #fff9c4; 
 }
+
 .taskType:nth-child(3) {
   background-color: #dcedc8; 
+}
+
+.taskType h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .taskType h2::before {
@@ -105,13 +123,7 @@ button:hover {
   list-style: none;
 }
 
-.taskType h2 {
-  font-size: 1.5rem;
-  color: #34495e;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
+/* Task Items */
 .task {
   display: flex;
   justify-content: space-between;
@@ -125,13 +137,6 @@ button:hover {
   opacity: 0;
   transform: translateY(10px);
   animation: fadeIn 0.2s forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .task:hover {
@@ -157,18 +162,15 @@ button:hover {
   background-color: #c0392b;
 }
 
-button:hover {
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
-}
-
-
-@media (max-width: 768px) {
-  .taskBar {
-    flex-direction: column;
+/* Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+/* Footer Styling */
 .footer {
   background-color: #34495e;
   color: white;
@@ -185,6 +187,7 @@ button:hover {
   font-size: 1rem;
 }
 
+/* Header Styling */
 .header {
   background-color: #34495e;
   color: white;
@@ -193,6 +196,7 @@ button:hover {
   width: 100%;
 }
 
+/* Social Links */
 .social-links {
   margin-top: 10px;
 }
@@ -207,4 +211,11 @@ button:hover {
 
 .social-links a:hover {
   color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .taskBar {
+    flex-direction: column;
+  }
 }
