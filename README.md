@@ -34,3 +34,6 @@ Web Todo app created with React + Vite for task planning.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Preview
+https://react-js-vite-todo-web-app.vercel.app/
